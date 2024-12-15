@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class SongViewModel {
+class SongViewModel : ViewModel() {
     private val songApi: SongApi
     private val _songList = MutableLiveData<List<Song>>()
     val songList: LiveData<List<Song>>

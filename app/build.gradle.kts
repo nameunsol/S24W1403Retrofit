@@ -40,7 +40,14 @@ android {
 }
 
 dependencies {
+    // NOTE: viewModel() 사용하기 위해 추가
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // NOTE: observeAsState 사용하기 위해 추가
+    implementation(libs.androidx.runtime.livedata.v176)
+
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
