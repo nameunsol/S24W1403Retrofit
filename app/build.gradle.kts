@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+
+    implementation(libs.androidx.navigation.compose)
     // NOTE: viewModel() 사용하기 위해 추가
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
